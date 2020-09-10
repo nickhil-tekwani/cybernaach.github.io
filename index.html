@@ -1,9 +1,5 @@
 <!DOCTYPE html>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
   <head>
     <title>CyberNaach</title>
@@ -16,13 +12,21 @@
     <noscript
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
+
+    <script>
+      var str = "http://" + window.location.hostname + "/";
+      console.log(str);
+      window.onload = function () {
+        document.getElementById("logo").href = str;
+      };
+    </script>
   </head>
   <body class="is-preload">
     <!-- Wrapper -->
     <div id="wrapper">
       <!-- Header -->
       <header id="header" class="alt">
-        <a href="index" class="logo"
+        <a id="logo" href="#" class="logo"
           ><strong>CyberNaach</strong>
           <span> | DDN's First Virtual Competition</span></a
         >
