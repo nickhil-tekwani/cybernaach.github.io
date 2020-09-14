@@ -2,7 +2,7 @@
 directly on our existing text, while
 also setting content to the appropriate
 text set in the data-text attribute. */
-.glitch {
+.aboutglitch {
   position: relative;
   color: white;
   /* font-size: 4em; */
@@ -11,7 +11,7 @@ text set in the data-text attribute. */
   for more information on how to random skew. */
   animation: glitch-skew 1s infinite linear alternate-reverse;
 }
-.glitch::before {
+.aboutglitch::before {
   content: attr(data-text);
   position: absolute;
   top: 0;
@@ -28,7 +28,7 @@ text set in the data-text attribute. */
   with an alternating animation to keep things fresh. */
   animation: glitch-anim 5s infinite linear alternate-reverse;
 }
-.glitch::after {
+.aboutglitch::after {
   content: attr(data-text);
   position: absolute;
   top: 0;

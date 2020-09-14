@@ -7,8 +7,33 @@
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
+    <meta property="og:title" content="CyberNaach | Rules" />
+    <meta
+      property="og:description"
+      content="The First Virtual Fusion Dance Competition"
+    />
+    <meta
+      property="og:image"
+      content="https://cybernaach.com/images/cybernaach_logo.png"
+    />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-177995822-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-177995822-1");
+    </script>
+
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/hoverglitch.css" />
+    <link rel="stylesheet" href="assets/css/subtleglitch.css" />
     <noscript>
       <link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
@@ -21,8 +46,11 @@
       <!-- Header -->
       <header id="header" class="alt">
         <a href="index.html" class="logo"
-          ><strong>CyberNaach</strong> | DDN's First Virtual Competition</a
-        >
+          ><strong class="glitch" data-text="CyberNaach">CyberNaach</strong
+          ><span class="tagline">
+            | The First Virtual Fusion Dance Competition
+          </span>
+        </a>
         <nav>
           <a href="#menu">Menu</a>
         </nav>
@@ -34,7 +62,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="register.html">Registration</a></li>
-          <li><a href="board.html">Executive Board</a></li>
+          <li><a href="team.html">Our Team</a></li>
           <li><a href="rules.html">Rules</a></li>
         </ul>
         <ul class="actions stacked">
@@ -58,9 +86,9 @@
                 <h3>Rules and Regulations</h3>
                 <ol>
                   <li>
-                    Dancers must be current students, no alumni of the team.
-                    Alumni may help create choreo, but the performances must be
-                    done by current students of teams.
+                    Dancers must be current undergraduate students, no alumni of
+                    the team or university. Alumni may help create choreo, but
+                    the performances must be done by current students.
                   </li>
                   <li>
                     Videos must be submitted by the deadlines. Any delays in
@@ -72,9 +100,11 @@
                   </li>
                   <li>
                     Teams may not request non-team members or other teams for
-                    individuals to perform for their team. However, anyone
-                    participating in the competition must be a current
-                    University student.
+                    individuals to perform for their team. All performers on a
+                    team must be from the same university. (However, since
+                    dancers must be current university students, individual
+                    students who may not have a university team may form their
+                    own team, made up of students from their university)
                   </li>
                   <li>
                     All dancers must be above the age of 18; however, exceptions
@@ -83,8 +113,8 @@
                   </li>
                   <li>No props, unless explicitly stated by the board.</li>
                   <li>
-                    Videos must be high quality (at least 720p), one angle and
-                    steady (no movement of camera).
+                    Videos must be high quality (at least 720p), one angle, in
+                    landscape orientation, and steady (no movement of camera).
                   </li>
                   <li>
                     Dancers may not have costumes, team or university gear, or
@@ -106,15 +136,16 @@
                     place, and teams will be refunded their registration fees.
                   </li>
                 </ol>
-                <!--   
-                <object
-                  data="/assets/pdfs/rules.pdf#toolbar=0"
-                  type="application/pdf"
-                  width="100%"
-                  height="600px"
-                  id="pdfDoc"
-                  name="pdfDoc"
-                ></object> -->
+                <div class="col-6 col-12-small">
+                  <p>
+                    <i
+                      >Any violations of these rules may lead to automatic
+                      disqualification from the competition. Exceptions may be
+                      granted at the discretion of the board, in extenuating
+                      circumstances, with proper documentation.</i
+                    >
+                  </p>
+                </div>
               </div>
               <div class="col-6 col-12-small">
                 <h3>Judging Rubric</h3>

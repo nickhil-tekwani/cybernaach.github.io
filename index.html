@@ -7,36 +7,56 @@
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
+
+    <meta property="og:title" content="CyberNaach | Home" />
+    <meta
+      property="og:description"
+      content="The First Virtual Fusion Dance Competition"
+    />
+    <meta
+      property="og:image"
+      content="https://cybernaach.com/images/cybernaach_logo.png"
+    />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-177995822-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-177995822-1");
+    </script>
+
+    <!-- stlye sheets -->
     <link rel="stylesheet" href="assets/css/main.css" />
-    <link rel="stylesheet" href="assets/css/hoverglitch.css" />
-    <noscript
-      ><link rel="stylesheet" href="assets/css/noscript.css"
+    <link rel="stylesheet" href="assets/css/subtleglitch.css" />
+    <link rel="stylesheet" href="assets/css/magic.css" />
+    <noscript>
+      <link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
-    <!-- <link rel="icon" type="image/png" href="/images/squarecolor.png" />
-    <link rel="shortcut icon" type="image/png" href="/images/squarecolor.png" /> -->
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
+
   <body class="is-preload">
-    <!-- <div
-      id="hidden"
-      style="
-        width: 100vw;
-        height: 100vh;
-        background-image: url('images/banner.jpg');
-      "
-    >
-      <div style="text-align: center">
-        <video no-controls autoplay src="images/glitchvideo.mp4"></video>
-      </div>
-    </div> -->
+    <div style="text-align: center" id="magic">
+      <img style="width: 100vw; height: 100vh" src="images/glitchvideo.gif" />
+    </div>
     <!-- Wrapper add display none here to hide content -->
-    <div id="wrapper">
+    <div id="wrapper" style="">
       <!-- Header -->
       <header id="header" class="alt">
         <a href="index.html" class="logo"
-          ><strong>CyberNaach</strong> | DDN's First Virtual Competition</a
-        >
+          ><strong class="glitch" data-text="CyberNaach">CyberNaach</strong
+          ><span class="tagline">
+            | The First Virtual Fusion Dance Competition
+          </span>
+        </a>
         <nav>
           <a href="#menu">Menu</a>
         </nav>
@@ -48,7 +68,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="register.html">Registration</a></li>
-          <li><a href="board.html">Executive Board</a></li>
+          <li><a href="team.html">Our Team</a></li>
           <li><a href="rules.html">Rules</a></li>
         </ul>
         <ul class="actions stacked">
@@ -62,18 +82,19 @@
       <section id="banner" class="major">
         <div class="inner">
           <header class="major">
-            <h1>
-              Welcome to
-              <span class="glitch" data-text="">CyberNaach</span>
-            </h1>
+            <!-- <h1>Welcome to CyberNaach</h1> -->
+            <img
+              style="text-align: center; width: 100%; height: 100%"
+              src="images/glitchgraygif.gif"
+            />
           </header>
 
           <div class="content">
             <p>
-              With colleges nationwide going either completely or semi
-              virtual,<br />
-              we are excited to announce DDN's first completely virtual
-              competition. <br />
+              With colleges nationwide going either entirely or partially
+              virtual this fall,<br />
+              we are excited to announce the fusion circuit's first ever
+              completely virtual competition. <br />
             </p>
             <ul class="actions">
               <li>
@@ -104,7 +125,8 @@
             <header class="major">
               <h3><a href="register.html" class="link">Registration</a></h3>
               <p>
-                Are you a captain of a current DDN team? Click here to register.
+                Are you a captain of a current collegiate fusion team? Click
+                here to register.
               </p>
             </header>
           </article>
@@ -113,7 +135,7 @@
               <img src="images/pic03.jpg" alt="" />
             </span>
             <header class="major">
-              <h3><a href="board.html" class="link">Executive Board</a></h3>
+              <h3><a href="team.html" class="link">Our Team</a></h3>
               <p>Our Board of Directors, Advisors, and Suite of Judges</p>
             </header>
           </article>

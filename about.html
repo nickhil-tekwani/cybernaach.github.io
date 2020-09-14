@@ -7,9 +7,35 @@
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
+
+    <meta property="og:title" content="CyberNaach | About" />
+    <meta
+      property="og:description"
+      content="The First Virtual Fusion Dance Competition"
+    />
+    <meta
+      property="og:image"
+      content="https://cybernaach.com/images/cybernaach_logo.png"
+    />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-177995822-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-177995822-1");
+    </script>
+
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/glitch.css" />
     <link rel="stylesheet" href="assets/css/hoverglitch.css" />
+    <link rel="stylesheet" href="assets/css/subtleglitch.css" />
     <noscript>
       <link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
@@ -22,8 +48,11 @@
       <!-- Header -->
       <header id="header" class="alt">
         <a href="index.html" class="logo"
-          ><strong>CyberNaach</strong> | DDN's First Virtual Competition</a
-        >
+          ><strong class="glitch" data-text="CyberNaach">CyberNaach</strong
+          ><span class="tagline">
+            | The First Virtual Fusion Dance Competition
+          </span>
+        </a>
         <nav>
           <a href="#menu">Menu</a>
         </nav>
@@ -35,7 +64,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="register.html">Registration</a></li>
-          <li><a href="board.html">Executive Board</a></li>
+          <li><a href="team.html">Our Team</a></li>
           <li><a href="rules.html">Rules</a></li>
         </ul>
         <ul class="actions stacked">
@@ -59,9 +88,9 @@
             <br />
             <h3>
               WELCOME TO
-              <span class="glitch" data-text="CYBERNAACH">
-                <strong style="color: #01fffc">CY</strong
-                ><strong style="color: #feff03">BE</strong
+              <span class="aboutglitch" data-text="CYBERNAACH">
+                <strong style="color: #feff03">CY</strong
+                ><strong style="color: #01fffc">BE</strong
                 ><strong style="color: #00fe00">RN</strong
                 ><strong style="color: #ff02fb">AA</strong
                 ><strong style="color: #fa0001">CH</strong></span
@@ -70,8 +99,8 @@
             <br />
             <p>
               The first of its kind, CyberNaach brings the same love and passion
-              the DDN community has for fusion dance into an entirely virtual,
-              COVID-safe setting. <br />
+              the collegiate South Asian community has for fusion dance into an
+              entirely virtual, COVID-safe setting. <br />
             </p>
             <p>
               With our comp, it doesn’t matter if your dancers can't return to
@@ -82,7 +111,7 @@
             </p>
 
             <p>
-              <strong style="color: #01fffc"> How Does This Work? </strong>
+              <strong style="color: #feff03"> How Does This Work? </strong>
               Each week, teams will "battle" another team. In the initial
               rounds, teams will be assigned 1 or 2 segments of a mix (roughly
               ~40 seconds per segment and either 1 or 2 dancers depending on
@@ -90,7 +119,7 @@
               dancer’s videos.
             </p>
             <p>
-              <strong style="color: #feff03"> To Reiterate: </strong> Only 1
+              <strong style="color: #01fffc"> To Reiterate: </strong> Only 1
               dancer on screen per segment. Your team will receive one or two
               segments to submit at the end of Week 1. You will be going head to
               head with another team that will be assigned the same segment(s).
@@ -99,8 +128,8 @@
             </p>
             <p>
               All videos will be judged by our
-              <a href="board.html#two"> panel of judges </a> , and the rubric
-              can be found <a> here </a>.
+              <a href="team.html#two"> panel of judges </a> , and the rubric can
+              be found <a href="rules.html"> here </a>.
             </p>
             <p>
               <strong style="color: #00fe00"> When? </strong>[Calendar Coming
@@ -124,11 +153,10 @@
         <section id="two">
           <div class="inner">
             <header class="major">
-              <h1>Sample 16-Team Bracket</h1>
+              <h1>Example 16-Team Bracket</h1>
             </header>
-            <h3>Image Below</h3>
             <span class="image main"
-              ><img src="images/pic11.jpg" alt=""
+              ><img src="images/bracket-example.png" alt=""
             /></span>
           </div>
         </section>
