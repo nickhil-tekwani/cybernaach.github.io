@@ -41,12 +41,31 @@
     /></noscript>
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <style>
+      .iframe-container {
+        overflow: hidden;
+        /* 16:9 aspect ratio */
+        padding-top: 56.25%;
+        position: relative;
+      }
+
+      .iframe-container iframe {
+        margin: auto;
+        border: 0;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+    </style>
   </head>
 
   <body class="is-preload">
-    <div style="text-align: center" id="magic">
+    <!-- <div style="text-align: center" id="magic">
       <img style="width: 100vw; height: 100vh" src="images/glitchvideo.gif" />
-    </div>
+    </div> -->
     <!-- Wrapper add display none here to hide content -->
     <div id="wrapper">
       <!-- Header -->
@@ -69,6 +88,8 @@
           <li><a href="about.html">About</a></li>
           <li><a href="register.html">Registration</a></li>
           <li><a href="team.html">Our Team</a></li>
+          <li><a href="judges.html">Judging Panel</a></li>
+          <li><a href="resources.html">Resources</a></li>
           <li><a href="rules.html">Rules</a></li>
         </ul>
         <ul class="actions stacked">
@@ -87,6 +108,14 @@
               style="text-align: center; width: 80%; height: 80%"
               src="images/glitchgraygif.gif"
             />
+            <!-- <div class="iframe-container">
+              <iframe
+                src="https://www.youtube.com/embed/5AwVCx8FS_8"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div> -->
           </header>
 
           <div class="content" style="padding-bottom: 2em !important">
@@ -98,7 +127,7 @@
             </p>
             <ul class="actions">
               <li>
-                <a href="#one" class="button next scrolly">Learn More</a>
+                <a href="#one" class="button next scrolly">Read More</a>
               </li>
             </ul>
           </div>
@@ -115,7 +144,7 @@
             </span>
             <header class="major">
               <h3><a href="about.html" class="link">About the Comp</a></h3>
-              <p>Learn about how CyberNaach will be run</p>
+              <p>Learn about how CyberNaach will be run.</p>
             </header>
           </article>
           <article>
@@ -135,8 +164,8 @@
               <img src="images/pic03.jpg" alt="" />
             </span>
             <header class="major">
-              <h3><a href="team.html" class="link">Our Team</a></h3>
-              <p>Our Board of Directors, Advisors, and Suite of Judges</p>
+              <h3><a href="judges.html" class="link">Judging</a></h3>
+              <p>Read about the judges for CyberNaach 2020!</p>
             </header>
           </article>
           <article>
@@ -144,11 +173,8 @@
               <img src="images/pic01.jpg" alt="" />
             </span>
             <header class="major">
-              <h3><a href="rules.html" class="link">Rules and Rubric</a></h3>
-              <p>
-                Find out more details about our rules, regulations, and judging
-                rubric
-              </p>
+              <h3><a href="resources.html" class="link">Resources</a></h3>
+              <p>Your one stop shop for all things CyberNaach.</p>
             </header>
           </article>
         </section>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CyberNaach</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <meta property="og:title" content="CyberNaach | Judges" />
+    <meta property="og:description" content="The Premier Virtual Fusion Dance Competition" />
+    <meta property="og:image" content="https://cybernaach.com/images/cybernaach_logo.png" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177995822-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "UA-177995822-1");
+    </script>
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/hoverglitch.css" />
+    <link rel="stylesheet" href="assets/css/subtleglitch.css" />
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <script src="judges.js"></script>
+
+    <style>
+        img {
+            cursor: pointer;
+        }
+        h3 {
+            font-size: 1em;
+        }
+    </style>
+    <script>
+        // replace class names 
+        window.onload = function () {
+            if (screen.width <= 500) {
+                for (let i =1; i < 13; i++) {
+                    var id = "judge" + i.toString();
+                    document.getElementById(id).classList.add('col-4');
+                    document.getElementById(id).classList.remove('col-2');
+                }
+
+                document.getElementById("bio").innerHTML = "Tap on a judge's photo to read more about them!"
+            }
+        };
+
+
+    </script>
+
+</head>
+
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
+        <!-- Header -->
+        <!-- Header -->
+        <header id="header" class="alt">
+            <a href="index.html" class="logo"><strong class="glitch" data-text="CyberNaach">CyberNaach</strong><span
+                    class="tagline">
+                    | The Premier Virtual Fusion Dance Competition
+                </span>
+            </a>
+            <nav>
+                <a href="#menu">Menu</a>
+            </nav>
+        </header>
+
+    <!-- Menu -->
+    <nav id="menu">
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="register.html">Registration</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="judges.html">Judging Panel</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="rules.html">Rules</a></li>
+        </ul>
+        <ul class="actions stacked">
+            <li>
+                <a class="button primary fit" href="register.html">Register Here</a>
+            </li>
+        </ul>
+    </nav>
+
+        <!-- Main -->
+        <div id="main" class="alt">
+            <!-- Judges -->
+            <section id="judges">
+                <div class="inner">
+                    <header class="major">
+                        <h1>Judging Panel</h1>
+                    </header>
+                    <div class="box alt">
+                        <div class="row gtr-50 gtr-uniform">
+                            <!-- 1 -->
+                            <div class="col-2 blurimgtxt" id="judge1">
+                                <span class="image fit"><img src="images/judgeArpit-sq.jpg" alt="" onclick="replaceText('Arpit')" />
+                                    <h3>Arpit Bhanderi*</h3>
+                                </span>
+                            </div>
+                            <!-- 2 -->
+                            <div class="col-2 blurimgtxt" id="judge2">
+                                <span class="image fit"><img src="images/judgeChintan.jpg" alt="" onclick="replaceText('Chintan')" />
+                                    <h3>Chintan Parikh</h3>
+                                </span>
+                            </div>
+                            <!-- 3 -->
+                            <div class="col-2 blurimgtxt" id="judge3">
+                                <span class="image fit"><img src="images/judgeDhruv.jpg" alt="" onclick="replaceText('Dhruv')" />
+                                    <h3>Dhruv Naik</h3>
+                                </span>
+                            </div>
+                            <!-- 4 -->
+                            <div class="col-2 blurimgtxt" id="judge4">
+                                <span class="image fit"><img src="images/judgeGaurav.jpg" alt="" onclick="replaceText('Gaurav')" />
+                                    <h3>Gaurav Gulati</h3>
+                                </span>
+                            </div>
+                            <!-- 5 -->
+                            <div class="col-2 blurimgtxt" id="judge5">
+                                <span class="image fit"><img src="images/judgeKeertana.jpg" alt="" onclick="replaceText('Keertana')" />
+                                    <h3>Keertana Alur</h3>
+                                </span>
+                            </div>
+                            <!-- 6 -->
+                            <div class="col-2 blurimgtxt" id="judge6">
+                                <span class="image fit"><img src="images/judgeKeerthana.jpg" alt="" onclick="replaceText('Keerthana')" />
+                                    <h3>Keerthana Pakanati</h3>
+                                </span>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="row gtr-50 gtr-uniform">
+                            <!-- 7 -->
+                            <div class="col-2 blurimgtxt" id="judge7">
+                                <span class="image fit"><img src="images/judgeNilang.jpg" alt="" onclick="replaceText('Nilang')" />
+                                    <h3>Nilang Vyas</h3>
+                                </span>
+                            </div>
+                            <!-- 8 -->
+                            <div class="col-2 blurimgtxt" id="judge8">
+                                <span class="image fit"><img src="images/judgePranav.jpg" alt="" onclick="replaceText('Pranav')" />
+                                    <h3>Pranav Patel</h3>
+                                </span>
+                            </div>
+                            <!-- 9 -->
+                            <div class="col-2 blurimgtxt" id="judge9">
+                                <span class="image fit"><img src="images/judgeRohit.jpg" alt="" onclick="replaceText('Rohit')" />
+                                    <h3>Rohit Jethwani</h3>
+                                </span>
+                            </div>
+                            <!-- 10 -->
+                            <div class="col-2 blurimgtxt" id="judge10">
+                                <span class="image fit"><img src="images/judgeSanjana.jpg" alt="" onclick="replaceText('Sanjana')" />
+                                    <h3>Sanjana Raj*</h3>
+                                </span>
+                            </div>
+                            <!-- 11 -->
+                            <div class="col-2 blurimgtxt" id="judge11">
+                                <span class="image fit"><img src="images/judgeSri.jpg" alt="" onclick="replaceText('Sri')" />
+                                    <h3>Srihari Sritharan*</h3>
+                                </span>
+                            </div>
+                            <!-- 12 -->
+                            <div class="col-2 blurimgtxt" id="judge12">
+                                <span class="image fit"><img src="images/judgeVikram.jpg" alt="" onclick="replaceText('Vikram')" />
+                                    <h3>Vikram Eagam</h3>
+                                </span>
+                            </div>
+
+                        </div>
+                        <br />
+                        <p>
+                            * denotes one of CyberNaach's head judges
+                        </p>
+                        <div class="box">
+                            <h2 id="bioheader"> About the Judges </h2>
+                            <p id="bio">
+                                Click a judge's photo to read more about them!
+                            </p>
+                        </div>
+                        
+                    </div>
+            </section>
+           
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer">
+            <div class="inner">
+                <ul class="icons">
+                    <li>
+                        <a href="https://www.youtube.com/channel/UC-FUd7moB9wRy8Yp2t9Eneg" target="_blank"
+                            class="icon brands alt fa-youtube"><span class="label">YouTube</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/CyberNaach-110170527498643" target="_blank"
+                            class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/cybernaach/" target="_blank"
+                            class="icon brands alt fa-instagram"><span class="label">Instagram</span></a>
+                    </li>
+                    <li>
+                        <a href="mailto:cybernaach@gmail.com" class="icon alt fa-envelope dark"><span
+                                class="label">Email</span></a>
+                    </li>
+                </ul>
+                <ul class="copyright">
+                    <li>&copy; CyberNaach</li>
+                    <li>cybernaach@gmail.com</li>
+                    <li>
+                        Built Differently by
+                        <a href="https://www.linkedin.com/in/nickhil-tekwani/" target="_blank">
+                            Nickhil Tekwani
+                        </a> &
+                        <a href="https://www.linkedin.com/in/agarharsh/" target="_blank">
+                            Harsh Agarwal
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mailgo@0.9.17/dist/mailgo.min.js"></script>
+</body>
+
+</html>

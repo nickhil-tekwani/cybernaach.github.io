@@ -2286,6 +2286,21 @@ a.icon.alt:active:before {
   opacity: 1;
 }
 
+.blurimgtxt:hover h4 {
+  opacity: 1;
+}
+.blurimgtxt h4 {
+  /* z-index: 1000 !important; */
+  text-align: center;
+  opacity: 0;
+  transition: 0.3s;
+  top: 40%;
+  left: 40%;
+  position: absolute;
+  margin: 0;
+  color: white;
+}
+
 .blurimgtxt h3 {
   text-align: center;
   opacity: 1;
