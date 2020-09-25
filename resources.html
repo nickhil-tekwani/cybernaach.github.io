@@ -31,14 +31,27 @@
 
       gtag("config", "UA-177995822-1");
     </script>
+    <script src="backtotop.js"></script>
 
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/glitch.css" />
     <link rel="stylesheet" href="assets/css/hoverglitch.css" />
     <link rel="stylesheet" href="assets/css/subtleglitch.css" />
+    <link rel="stylesheet" href="assets/css/backtotop.css" />
     <noscript>
       <link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
+    <script>
+      function tocButton() {
+        document.getElementById("js-top").classList.add("show");
+        document.getElementById("js-top").classList.remove("hide");
+      }
+
+      function bttButton() {
+        document.getElementById("js-top").classList.add("hide");
+        document.getElementById("js-top").classList.remove("show");
+      }
+    </script>
   </head>
 
   <body class="is-preload">
@@ -65,7 +78,7 @@
           <li><a href="about.html">About</a></li>
           <li><a href="register.html">Registration</a></li>
           <li><a href="team.html">Our Team</a></li>
-          <li><a href="judges.html">Judging Panel</a></li>
+          <li><a href="judging.html">Judging Panel</a></li>
           <li><a href="resources.html">Resources</a></li>
           <li><a href="rules.html">Rules</a></li>
         </ul>
@@ -84,15 +97,6 @@
             <header class="major">
               <h1>Official Resources</h1>
             </header>
-            <!-- <br />
-                    <!-- <h3> -->
-            <!-- WELCOME TO
-                        <span class="aboutglitch" data-text="CYBERNAACH">
-                            <strong style="color: #feff03">CY</strong><strong style="color: #01fffc">BE</strong><strong
-                                style="color: #00fe00">RN</strong><strong style="color: #ff02fb">AA</strong><strong
-                                style="color: #fa0001">CH</strong></span>
-                    </h3> -->
-            <!-- <br /> -->
             <p>
               Thank you for your interest in CyberNaach 2020! This page will
               have all of the most relevant information necessary for teams,
@@ -124,35 +128,35 @@
             <div id="toc">
               Video Content
               <div class="row">
-                <div class="col-4 col-12-medium">
+                <div class="col-4 col-12-medium" onclick="tocButton()">
                   <a href="#videoExplain" class="button fit"
                     >Explanation Video</a
                   >
                 </div>
-                <div class="col-4 col-12-medium">
+                <div class="col-4 col-12-medium" onclick="tocButton()">
                   <a href="#videoHype" class="button fit">Hype Video</a>
                 </div>
-                <div class="col-4 col-12-medium">
+                <div class="col-4 col-12-medium" onclick="tocButton()">
                   <a href="#videoLineup" class="button fit">Lineup Video</a>
                 </div>
               </div>
               <br />
               Timeline and Format
               <div class="row">
-                <div class="col-4 col-12-medium">
+                <div class="col-4 col-12-medium" onclick="tocButton()">
                   <a href="#reg" class="button fit">Registration Information</a>
                 </div>
-                <div class="col-4 col-12-medium">
+                <div class="col-4 col-12-medium" onclick="tocButton()">
                   <a href="#bracket" class="button fit">Sample Bracket</a>
                 </div>
-                <div class="col-4 col-12-medium">
+                <div class="col-4 col-12-medium" onclick="tocButton()">
                   <a href="#timeline" class="button fit">Current Timeline</a>
                 </div>
               </div>
               <br />
               Rules
               <div class="row">
-                <div class="col-4 col-12-medium">
+                <div class="col-4 col-12-medium" onclick="tocButton()">
                   <a href="#rubric" class="button fit">Rubric</a>
                 </div>
                 <div class="col-4 col-12-medium">
@@ -168,7 +172,7 @@
                     href="rules.html"
                     target="_blank"
                     class="button fit icon solid fa-external-link-alt"
-                    >Regulations</a
+                    >Code of Conduct</a
                   >
                 </div>
               </div>
@@ -193,8 +197,8 @@
                   position: absolute;
                   top: 0;
                   left: 0;
-                  width: 70%;
-                  height: 70%;
+                  width: 100%;
+                  height: 100%;
                 }
               </style>
               <div class="embed-container">
@@ -216,15 +220,17 @@
               <hr />
               <h3 id="reg">Registration Information</h3>
               <p>
-                After submitting your initial sign up form, there are only TWO
-                items that must be submitted by teams for official registration
-                for CyberNaach 2020.
+                After submitting your
+                <a href="register.html" target="_blank">
+                  initial sign up form </a
+                >, there are only TWO items that must be submitted by teams for
+                official registration for CyberNaach 2020.
               </p>
               <ol>
                 <li>$50 Registration Fee via Venmo</li>
                 <li>
-                  Names, Contact Info, Government ID, and Photo ID for the 7-9
-                  dancers competing on your roster.
+                  Names, Contact Info, and Government ID for the 7-9 dancers
+                  competing on your roster.
                 </li>
               </ol>
               <i>
@@ -332,11 +338,26 @@
               <!-- break -->
               <hr />
               <h3 id="rubric">Rubric Breakdown</h3>
-              <p>Coming Soon</p>
+              <p>Full Rubric Breakdown Video Coming Soon</p>
+              <div class="fit small">
+                <a
+                  href="http://bit.ly/CyberNaachRubric"
+                  target="_blank"
+                  class="button icon solid fa-external-link-alt"
+                >
+                  View the Full Rubric</a
+                >
+              </div>
             </div>
           </div>
         </section>
-        <section id="bracket"></section>
+        <!-- back to top -->
+        <a class="top-link hide" href="" id="js-top" onclick="bttButton()">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6">
+            <path d="M12 6H0l6-6z" />
+          </svg>
+          <span class="screen-reader-text">Back to top</span>
+        </a>
       </div>
 
       <!-- Footer -->
@@ -374,6 +395,34 @@
                 ><span class="label">Email</span></a
               >
             </li>
+            <style>
+              .bollyshake {
+                position: absolute;
+                right: 10%;
+              }
+
+              .nobottomborder {
+                border-bottom: 0px !important;
+              }
+
+              @media only screen and (max-width: 333px) {
+                .bollyshake {
+                  display: none !important;
+                }
+              }
+            </style>
+            <li class="bollyshake">
+              <a
+                class="nobottomborder"
+                target="_blank"
+                href="https://www.bollyshake.com/#/"
+              >
+                <img
+                  style="width: 150px; height: 53px"
+                  src="images/bollyshake.png"
+                />
+              </a>
+            </li>
           </ul>
           <ul class="copyright">
             <li>&copy; CyberNaach</li>
@@ -391,6 +440,20 @@
                 Harsh Agarwal
               </a>
             </li>
+            <style>
+              .mediapartner {
+                position: absolute;
+                right: 9%;
+                border-left: 0px !important;
+              }
+
+              @media only screen and (max-width: 900px) {
+                .mediapartner {
+                  display: none !important;
+                }
+              }
+            </style>
+            <li class="mediapartner">Official Media Parter</li>
           </ul>
         </div>
       </footer>
