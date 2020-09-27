@@ -34,18 +34,29 @@
         h3 {
             font-size: 1em;
         }
+        .headjudge {
+            left: 25%
+        }
+    
+        .mobileheadjudge {
+            left: auto;
+        }
     </style>
     <script>
         // replace class names 
         window.onload = function () {
             if (screen.width <= 500) {
-                for (let i =1; i < 13; i++) {
+                for (let i =1; i < 16; i++) {
                     var id = "judge" + i.toString();
                     document.getElementById(id).classList.add('col-4');
                     document.getElementById(id).classList.remove('col-2');
+                    if([13,14,15].includes(i)) {
+                        document.getElementById(id).classList.add('mobileheadjudge')
+                        document.getElementById(id).classList.remove('headjudge')
+                    }
                 }
 
-                document.getElementById("bio").innerHTML = "Tap on a judge's photo to read more about them!"
+                document.getElementById("anotherbio").innerHTML = "Tap on another judge's photo to read more about them!"
             }
         };
 
@@ -129,13 +140,14 @@
                     <!-- Judges -->
                     <header class="major" id="judges">
                         <h2>Judging Panel</h2>
+                        <p>Scroll down to see judge bios!</p> 
                     </header>
                     <div class="box alt">
                         <div class="row gtr-50 gtr-uniform">
                             <!-- 1 -->
                             <div class="col-2 blurimgtxt" id="judge1">
-                                <span class="image fit"><img src="images/judgeArpit-sq.jpg" alt="" onclick="replaceText('Arpit')" />
-                                    <h3>Arpit Bhanderi*</h3>
+                                <span class="image fit"><img src="images/judgeAnu.jpg" alt="" onclick="replaceText('Anu')" />
+                                    <h3>Anu Mysore</h3>
                                 </span>
                             </div>
                             <!-- 2 -->
@@ -146,18 +158,21 @@
                             </div>
                             <!-- 3 -->
                             <div class="col-2 blurimgtxt" id="judge3">
+                                
                                 <span class="image fit"><img src="images/judgeDhruv.jpg" alt="" onclick="replaceText('Dhruv')" />
                                     <h3>Dhruv Naik</h3>
                                 </span>
                             </div>
                             <!-- 4 -->
                             <div class="col-2 blurimgtxt" id="judge4">
+                                
                                 <span class="image fit"><img src="images/judgeGaurav.jpg" alt="" onclick="replaceText('Gaurav')" />
                                     <h3>Gaurav Gulati</h3>
                                 </span>
                             </div>
                             <!-- 5 -->
                             <div class="col-2 blurimgtxt" id="judge5">
+                                
                                 <span class="image fit"><img src="images/judgeKeertana.jpg" alt="" onclick="replaceText('Keertana')" />
                                     <h3>Keertana Alur</h3>
                                 </span>
@@ -168,6 +183,7 @@
                                     <h3>Keerthana Pakanati</h3>
                                 </span>
                             </div>
+                            
                         </div>
                         <br />
                         <div class="row gtr-50 gtr-uniform">
@@ -191,14 +207,14 @@
                             </div>
                             <!-- 10 -->
                             <div class="col-2 blurimgtxt" id="judge10">
-                                <span class="image fit"><img src="images/judgeSanjana.jpg" alt="" onclick="replaceText('Sanjana')" />
-                                    <h3>Sanjana Raj*</h3>
+                                <span class="image fit"><img src="images/judgeShatakshi.jpg" alt="" onclick="replaceText('Shatakshi')" />
+                                    <h3>Shatakshi Shekhar</h3>
                                 </span>
                             </div>
                             <!-- 11 -->
                             <div class="col-2 blurimgtxt" id="judge11">
-                                <span class="image fit"><img src="images/judgeSri.jpg" alt="" onclick="replaceText('Sri')" />
-                                    <h3>Srihari Sritharan*</h3>
+                                <span class="image fit"><img src="images/judgeShriya.jpg" alt="" onclick="replaceText('Shriya')" />
+                                    <h3>Shriya Kannan</h3>
                                 </span>
                             </div>
                             <!-- 12 -->
@@ -207,16 +223,49 @@
                                     <h3>Vikram Eagam</h3>
                                 </span>
                             </div>
+                            
 
                         </div>
                         <br />
-                        <p>
-                            * denotes one of CyberNaach's head judges
-                        </p>
+                        <div style="text-align: center;">
+                            <h5 style="margin-bottom: 0em !important;">
+                                <u>
+                                    Head Judges
+                                </u>
+                                
+                            </h5>
+                        </div>
+                        
+                        <div class="row gtr-50 gtr-uniform" >
+                            <!-- 13 -->
+                            <div class="col-2 blurimgtxt headjudge" id="judge13">
+                                <span class="image fit"><img src="images/judgeArpit-sq.jpg" alt="" onclick="replaceText('Arpit')" />
+                                    <h3>Arpit Bhanderi</h3>
+                                </span> 
+                            </div>
+                            <!-- 14 -->
+                            <div class="col-2 blurimgtxt headjudge" id="judge14" >
+                                <span class="image fit"><img src="images/judgeSanjana.jpg" alt="" onclick="replaceText('Sanjana')" />
+                                    <h3>Sanjana Raj</h3>
+                                </span>
+                            </div>
+                            <!-- 15 -->
+                            <div class="col-2 blurimgtxt headjudge" id="judge15" >
+                                <span class="image fit"><img src="images/judgeSri.jpg" alt="" onclick="replaceText('Sri')" />
+                                    <h3>Srihari Sritharan</h3>
+                                </span>
+                            </div>
+                        </div>
+                        <br />
+                        
+                        
                         <div class="box">
                             <h2 id="bioheader"> About the Judges </h2>
+                            <p id="anotherbio">
+                                Click another judge's photo to read more about them!
+                            </p>
                             <p id="bio">
-                                Click a judge's photo to read more about them!
+
                             </p>
                         </div>
                         
